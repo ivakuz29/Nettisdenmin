@@ -8,7 +8,7 @@ body {
   text-align: center;
   
   /* Background image properties */
-  background-image: url('Bilder/Website background.png');
+  background-image: url('../Bilder/Website\ background.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -21,7 +21,7 @@ body.underside {
 
 /* Header styling */
 header {
-  background-image: url(Bilder/Header.png);
+  background-image: url(../Bilder/Header.png);
   background-size: 120%;
   background-position: center 100%;
   background-attachment: fixed;
