@@ -8,238 +8,265 @@ body {
   text-align: center;
   
   /* Background image properties */
-  background-image: url('/Bilder/Website\ background.png'); /* Replace with the path to your image */
+  background-image: url('Bilder/Website background.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-header {
-  background-image: url('/Bilder/Header.png');
-  background-size: 150%; /* Makes sure the image covers the entire area */
-  background-position: center 110%; /* Centers the image */
-  color: rgb(255, 255, 255); /* Ensures the text is readable against the background */
-  text-align: center; /* Centers the text */
-  padding: 100px 0; /* Adds some padding to give space around the text */
-  padding: 80px;
-  text-align: center; / center the text/
-  background-image:url(../bilder/blurred\ nature.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  color: white; / white text color */
-  font-style: italic;
-  font-family: 'Times New Roman', Times, serif;
-  }
 
-
-  /* Project Cubes Container */
-  .project-container {
-    display: flex;
-    justify-content: center;
-    gap: 5px;
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-  }
-
-  /* Individual Cube Styling */
-  .project-cube {
-    width: 300px;
-    height: 300px;
-    border: 2px solid #000000;
-    margin: 0;
-    background-color: #fff;
-    position: relative;
-  }
-
-  /* Cube Content Styling */
-  .cube-content {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    box-sizing: border-box;
-  }
-
-  .project-cube a {
-    position: static;
-    text-decoration: none;
-    color: inherit;
-  }
-
-  .cube-content h3 {
-    position: absolute;
-    top: 20px;
-    color: #333;
-    cursor: pointer;
-    margin: 0;
-  }
-
-  h4 {
-    font-size: 24px; /* Juster størrelsen etter behov */
-    font-weight: bold;
-    color: white; /* Tekstfarge */
-    background-color: #333; /* Bakgrunnsfarge for headeren */
-    padding: 10px 20px; /* Innvendig marg for bedre utseende */
-    border-radius: 8px; /* Avrundede hjørner */
-    outline: 2px solid #555; /* Outline rundt teksten */
-    text-align: center; /* Sentraliserer teksten */
-    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2); /* Skaper en skygge for dybde */
+/* Styles for the underside page */
+body.underside {
+  background-image: url('Bilder/Sailboat.jpg');
 }
 
-  .cube-content p {
-    margin: 0;
-    color: #666;
-  }
+/* Header styling */
+header {
+  background-image: url(Bilder/Header.png);
+  background-size: 120%;
+  background-position: center 100%;
+  background-attachment: fixed;
+  color: white;
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  padding: 80px;
+}
 
-  /* Added styles for lists inside cube content */
-  .cube-content ul,
-  .cube-content ol {
-    text-align: center;
-    padding-left: 0;
-    margin: 10px 0;
-    list-style-position: inside;
-    width: 100%;
-  }
+/* Project Cubes Container */
+.project-container {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
 
-  .cube-content ul li,
-  .cube-content ol li {
-    color: #000000;
-    margin: 5px 0;
-    padding: 5px;
-    display: block;
-    cursor: pointer;
-  }
+/* Individual Cube Styling */
+.project-cube {
+  width: 300px;
+  height: 300px;
+  border: 2px solid #000000;
+  background-color: #fff;
+  position: relative;
+}
 
-  .cube-content ul li:hover,
-  .cube-content ol li:hover {
-    text-decoration: underline;
-    color: #000000;
-  }
-  
-  /* tool Bar */
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #ffffff;
-  }
+/* Cube Content Styling */
+.cube-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
 
-  .nav-bar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #72ad36;
-  }
-  li {
-    display: inline-block;
-    padding: 14px 20px; /*toolbar størelse*/
-  }
-  
-  li a {
-    text-decoration: none;
-    color: white; /*font på toolbar*/
-    font-weight: bold;
-    padding: 14px 20px;
-    transition: 0.3s; 
-  }
-  
-  li a:hover {
-    background-color: #545151;
-    color: #ffd700; /* farge på linker */
-    border-radius: 4px;
-  }
-  
-  /* About section styling */
-  .about-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-  }
+.project-cube a {
+  position: static;
+  text-decoration: none;
+  color: inherit;
+}
 
-  .about-content {
-    flex: 1;
-    padding: 0 50px;
-    text-align: center;
-  }
+.cube-content h3 {
+  position: absolute;
+  top: 20px;
+  color: #333;
+  cursor: pointer;
+  margin: 0;
+}
 
-  .about-image {
-    flex: 0 0 300px;
-  }
+.cube-content p {
+  margin: 0;
+  color: #666;
+}
 
-  .about-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  }
-  
-  h1, h2 {
-    color: #2c3e50; /* farge på h1 og h2 tekst */
-    text-align: center;
-  }
-  
-  p {
-    color: #444; /* farge på paragraph tekster */
-    font-size: 1.1em;  
-    max-width: 800px;
-    margin: 20px auto; /* sentrerer*/
-    text-align: center;
-  }
-  
-  /* Images */
-  img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* legger til en skygge på bilder */
-    margin: 10px auto;
-  }
-  
-  /* Sections Styling */
-  section {
-    padding: 40px;
-    margin: 30px auto;
-    max-width: 1200px;
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    transform: perspective(1000px) rotateX(2deg);
-    transition: transform 0.3s ease;
-    border: 1px solid rgba(0,0,0,0.1);
-    backdrop-filter: blur(10px);
-  }
-  footer {
-    padding: 40px;
-    margin: 30px auto;
-    max-width: 1200px;
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    transform: perspective(1000px) rotateX(2deg);
-    transition: transform 0.3s ease;
-    border: 1px solid rgba(0,0,0,0.1);
-    backdrop-filter: blur(10px);
-  }
+.cube-content ul,
+.cube-content ol {
+  text-align: center;
+  padding-left: 0;
+  margin: 10px 0;
+  list-style-position: inside;
+  width: 100%;
+}
 
-  footer:hover {
-    transform: perspective(1000px) rotateX(0deg);
-    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
-  }
+.cube-content ul li,
+.cube-content ol li {
+  color: #000000;
+  margin: 5px 0;
+  padding: 5px;
+  display: block;
+  cursor: pointer;
+}
 
-  section:hover {
-    transform: perspective(1000px) rotateX(0deg);
-    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
-  }
-  
-  #home {
-    background-color: #ffffff;
+.cube-content ul li:hover,
+.cube-content ol li:hover {
+  text-decoration: underline;
+  color: #000000;
+}
+
+/* Tool Bar */
+ul, .nav-bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.nav-bar {
+  background-color: #72ad36;
+}
+
+li {
+  display: inline-block;
+  padding: 14px 20px;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 14px 20px;
+  transition: 0.3s;
+}
+
+li a:hover {
+  background-color: #545151;
+  color: #ffd700;
+  border-radius: 4px;
+}
+
+/* About Section Styling */
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-content {
+  flex: 1;
+  padding: 0 50px;
+  text-align: center;
+}
+
+.about-image {
+  flex: 0 0 300px;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Headings and Text */
+h1, h2 {
+  color: #2c3e50;
+  text-align: center;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  background-color: #333;
+  padding: 10px 20px;
+  border-radius: 8px;
+  outline: 2px solid #555;
+  text-align: center;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+p {
+  color: #444;
+  font-size: 1.1em;
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px auto;
+}
+
+/* Sections Styling */
+section, footer {
+  padding: 40px;
+  margin: 30px auto;
+  max-width: 1200px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transform: perspective(1000px) rotateX(2deg);
+  transition: transform 0.3s ease;
+  border: 1px solid rgba(0,0,0,0.1);
+  backdrop-filter: blur(10px);
+}
+
+section:hover, footer:hover {
+  transform: perspective(1000px) rotateX(0deg);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+/* Home Section */
+#home {
+  background-color: #ffffff;
+}
+
+/* Table Styling */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+  color: #ffffff;
+}
+
+th {
+  background-color: hsl(78, 48%, 58%);
+}
+
+caption {
+  color: #000;
+  font-size: 110%;
+  padding: 10px;
+}
+
+/* Container for Flex Layout */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 10px;
+  gap: 20px;
+}
+
+.container section {
+  flex: 1 1 calc(33.333% - 20px);
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  min-width: 250px;
+}
+
+
+@media
