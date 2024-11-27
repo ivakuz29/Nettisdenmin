@@ -8,15 +8,17 @@ body {
   text-align: center;
   
   /* Background image properties */
-  background-image: url('../Bilder/Website\ background.png');
+  background-color: #3e464f;
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 /* Styles for the underside page */
 body.underside {
   background-image: url('Bilder/Sailboat.jpg');
+}
+
+main {
+conatiner: 
 }
 
 /* Header styling */
@@ -31,6 +33,7 @@ header {
   text-align: center;
   padding: 80px;
 }
+
 
 /* Project Cubes Container */
 .project-container {
@@ -116,7 +119,7 @@ ul, .nav-bar {
 }
 
 .nav-bar {
-  background-color: #72ad36;
+  background-color: #79949f;
 }
 
 li {
@@ -269,4 +272,3 @@ caption {
 }
 
 
-@media
