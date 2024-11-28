@@ -18,7 +18,7 @@ body.underside {
 }
 
 main {
-conatiner: 
+conatine
 }
 
 /* Header styling */
@@ -34,6 +34,10 @@ header {
   padding: 80px;
 }
 
+main,section {
+
+
+}
 
 /* Project Cubes Container */
 .project-container {
