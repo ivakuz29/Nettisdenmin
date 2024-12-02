@@ -140,8 +140,8 @@ li a {
 }
 
 li a:hover {
-  background-color: #545151;
-  color: #ffd700;
+  background-color: #192840;
+  color: #ffffff;
   border-radius: 4px;
 }
 
@@ -227,6 +227,24 @@ section:hover, footer:hover {
   box-shadow: 0 15px 40px rgba(0,0,0,0.15);
 }
 
+/* Sections Double on one page aka Horizontal Grids  */
+.section-double {
+  display: flex; / Flex layout to arrange sections side-by-side /
+  flex-wrap: wrap; / Wrap sections if the screen is too small /
+  justify-content: space-between; / Space between sections /
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 10px;
+  gap: 20px; / Space between sections /
+}
+
+
+
+
+}
+
+
+
 /* Home Section */
 #home {
   background-color: #ffffff;
@@ -242,7 +260,7 @@ td, th {
   border: 1px solid black;
   padding: 8px;
   text-align: center;
-  color: #ffffff;
+  color: #000000;
 }
 
 th {
