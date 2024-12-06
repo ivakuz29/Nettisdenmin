@@ -186,7 +186,7 @@ h4 {
   background-color: #333;
   padding: 10px 20px;
   border-radius: 8px;
-  outline: 2px solid #555;
+  outline: 2px solid #555;url(http://127.0.0.1:3000/index.html)
   text-align: center;
   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
 }
@@ -208,8 +208,8 @@ img {
   margin: 10px auto;
 }
 
-/* Sections Styling */
-section, footer {
+/* Sections Styling footer osv */
+section {
   padding: 40px;
   margin: 30px auto;
   max-width: 1200px;
@@ -223,10 +223,22 @@ section, footer {
   
 }
 
+footer {
+  background-image: url(../Bilder/Header.png);
+  background-size: 120%;
+  background-position: center 100%;
+  background-attachment: fixed;
+  color: rgba(255, 255, 255, 0.027);
+  text-align: center;
+  padding: 80px;
+}
+
+
 section:hover, footer:hover {
   transform: perspective(1000px) rotateX(0deg);
   box-shadow: 0 15px 40px rgba(0,0,0,0.15);
 }
+
 
 /* Sections Double on one page aka Horizontal Grids  */
 .section-double {
