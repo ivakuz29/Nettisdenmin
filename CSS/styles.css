@@ -241,23 +241,25 @@ section:hover, footer:hover {
 
 
 /* Sections Double on one page aka Horizontal Grids  */
-.section-double {
-  display: flex; / Flex layout to arrange sections side-by-side /
-  flex-wrap: wrap; / Wrap sections if the screen is too small /
-  justify-content: space-between; / Space between sections /
+.Horizontal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   max-width: 1000px;
   margin: 0 auto;
   padding: 20px 10px;
-  gap: 20px; / Space between sections /
+  gap: 20px;
 }
 
-
-
-
-
-
+.Horizontal section {
+  flex: 1 1 calc(50% - 20px);
 }
 
+@media (max-width: 767px) {
+  .Horizontal section {
+    flex: 1 1 100%;
+  }
+}
 
 
 /* Home Section */
