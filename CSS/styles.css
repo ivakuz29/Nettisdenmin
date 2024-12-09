@@ -168,6 +168,7 @@ li a:hover {
 
 .about-image img {
   width: 100%;
+
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -227,9 +228,7 @@ footer {
   background-image: url(../Bilder/Header.png);
   background-size: 120%;
   background-position: center 100%;
-  background-attachment: fixed;
   color: rgba(255, 255, 255, 0.027);
-  text-align: center;
   padding: 80px;
 }
 
@@ -242,13 +241,16 @@ section:hover, footer:hover {
 
 /* Sections Double on one page aka Horizontal Grids  */
 .Horizontal {
+
+  flex-direction: row;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  max-width: 1000px;
+  justify-content: space-between;
+  max-width: 600px;
   margin: 0 auto;
   padding: 20px 10px;
-  gap: 20px;
+  gap: 10px;
+
 }
 
 .Horizontal section {
