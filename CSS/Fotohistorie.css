@@ -9,25 +9,30 @@ body {
 
 
 p {
-    font-size: 14px; /* Smaller font size */
-    line-height: 1.4; /* Compact line height */
-    margin: 10px 0; /* Space between paragraphs */
-    padding: 5px 0; /* Optional padding */
-    max-width: 600px; /* Set a max-width to control the stretching */
-    margin-left: auto;  /* Center align text block horizontally */
-    margin-right: auto; /* Center align text block horizontally */
-    text-align: left;  /* Optional: align text to the left, or 'center' if preferred */
-    word-wrap: break-word; /* Ensure long words break and don't stretch the block */
+    font-size: 14px; 
+    line-height: 1.4;
+    margin: 10px 0;
+    padding: 5px 0; 
+    max-width: 600px; 
+    margin-left: auto;  
+    margin-right: auto; 
+    text-align: left;  
+    word-wrap: break-word; 
 }
 
 
 
 header {
-    background-color: #333;
+    background-image: url(../Bilder/Header.png);
+    background-size: 120%;
+    background-position: center 100%;
+    background-attachment: fixed;
     color: white;
-    padding: 20px;
-    font-size: 24px;
-}
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 80px;
+  }
 
 /* Navigation bar - reduced padding for compactness */
 .nav-bar {
@@ -35,7 +40,8 @@ header {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #000000;
+    background-color: #79949f;
+    ;
 }
 
 li {
