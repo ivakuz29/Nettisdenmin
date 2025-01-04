@@ -67,11 +67,6 @@ li a:hover {
   border-radius: 4px;
 }
 
-main, section {
-  /* Added to ensure all content is contained within the section */
-  overflow: hidden;
-}
-
 /* Project Cubes Container */
 .project-container {
   display: flex;
@@ -175,6 +170,7 @@ h1, h2 {
   text-align: center;
 }
 
+
 h4 {
   font-size: 20px;
   font-weight: bold;
@@ -189,10 +185,9 @@ h4 {
 
 p {
   color: #444;
-  font-size: 1em;
   max-width: 800px;
-  margin: 20px auto;
   text-align: center;
+  padding: 10px
 }
 
 /* Images */
@@ -201,7 +196,7 @@ img {
   height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 10px auto;
+  margin: auto;
 }
 
 footer {
@@ -225,7 +220,7 @@ section {
   background: rgb(255, 255, 255);
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1); 
-  
+  gap: 10px
 }
 
 /* Sektion to make background invisible */
