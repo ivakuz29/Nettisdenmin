@@ -259,8 +259,6 @@ section.alternate {
 }
 
 
-
-
 /* Container for Flex Layout */
 .container {
   display: flex;
@@ -319,8 +317,11 @@ main {
   
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: -140px; /* Decreased gap to bring sections closer */
+  width: fit-content;
+  gap: 20px; /* Decreased gap to bring sections closer */
   padding: 90px; /* Maintained padding to keep sections further from corners */
+  justify-content: center;
+  margin: 0, auto; 
 }
 
 /* Media for smaller screens */
