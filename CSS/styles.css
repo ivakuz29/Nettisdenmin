@@ -260,6 +260,40 @@ section {
   padding: 10px; /* Reduced padding for a more compact look */
   min-width: 200px; /* Reduced min-width for a more compact look */
 }
+/* Styling for the table caption */
+caption {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #333;
+}
+
+/* Styling for the top-row */
+.top-row {
+  background-color: #ffffff;
+
+  font-weight: bold;
+  text-align: left;
+}
+
+/* General table data cell styling */
+td {
+  border: 1px solid #000000;
+  padding: 10px;
+  text-align: left;
+  color: black;
+}
+
+/* Styling for rows other than the top-row */
+.row {
+  background-color: #f9f9f9;
+}
+
+.row:hover {
+  background-color: #f1f1f1;
+}
+
 
 /* Main Section */
 main {
@@ -269,3 +303,5 @@ main {
   grid-gap: 10px; /* Reduced grid gap for compact layout */
   padding: 10px; /* Keep it minimal */
 }
+
+
