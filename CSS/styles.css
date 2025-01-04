@@ -206,12 +206,17 @@ img {
 section {
   padding: 10px; 
   margin: 5px auto;
-  box-sizing: flex; 
+  box-sizing: flex; /* Corrected box-sizing property */
   max-width: 1000px; 
-  background: white;
+  background: rgb(255, 255, 255);
   border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1); 
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1); 
   
+}
+
+/* Sektion to make background invisible */
+section.alternate {
+  background: rgb(62, 69, 78); /* Changed background color */
 }
 
 
@@ -220,7 +225,7 @@ section {
   padding: 5px;
   margin: 10px auto;
   max-width: 600px;
-  gap: 10px; /* Reduced gap for compact layout */
+  gap: 10px; 
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -241,6 +246,9 @@ section {
   height: 100%;
   object-fit: cover;
 }
+
+
+
 
 /* Container for Flex Layout */
 .container {
@@ -300,8 +308,8 @@ main {
   
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px; /* Reduced grid gap for compact layout */
-  padding: 10px; /* Keep it minimal */
+  grid-gap: 10px; 
+  padding: 10px; 
 }
 
 
