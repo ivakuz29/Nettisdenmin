@@ -31,6 +31,42 @@ header {
   padding: 60px;
 }
 
+/* nav bar */
+.nav-bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav-bar {
+  background-color: #79949f;
+}
+
+li {
+  display: inline-block;
+  padding: 14px 20px;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 14px 20px;
+  transition: 0.3s;
+}
+
+li a:hover {
+  background-color: #192840;
+  color: #ffffff;
+  border-radius: 4px;
+}
+
 main, section {
   /* Added to ensure all content is contained within the section */
   overflow: hidden;
@@ -115,41 +151,7 @@ main, section {
   color: #000000;
 }
 
-/* Tool Bar */
-.nav-bar {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #ffffff;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-}
 
-.nav-bar {
-  background-color: #79949f;
-}
-
-li {
-  display: inline-block;
-  padding: 14px 20px;
-}
-
-li a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  padding: 14px 20px;
-  transition: 0.3s;
-}
-
-li a:hover {
-  background-color: #192840;
-  color: #ffffff;
-  border-radius: 4px;
-}
 
 /* About Section Image Styling */
 
