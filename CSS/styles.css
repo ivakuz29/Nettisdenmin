@@ -17,9 +17,6 @@ body.underside {
   background-image: url('Bilder/Sailboat.jpg');
 }
 
-main {
-conatine
-}
 
 /* Header styling */
 header {
@@ -31,31 +28,34 @@ header {
   font-style: italic;
   font-family: 'Times New Roman', Times, serif;
   text-align: center;
-  padding: 80px;
+  padding: 60px; /* Reduced padding for a more compact look */
 }
 
-main,section {
-
-
+main, section {
+  /* Added to ensure all content is contained within the section */
+  overflow: hidden;
 }
 
 /* Project Cubes Container */
 .project-container {
   display: flex;
   justify-content: center;
-  gap: 5px;
+  gap: 20px; /* Reduced gap for compact spacing */
   width: 100%;
-  padding: 20px;
+  padding: 10px; /* Reduced padding */
   box-sizing: border-box;
 }
 
 /* Individual Cube Styling */
 .project-cube {
-  width: 300px;
+  width: 200px;
   height: 300px;
   border: 2px solid #000000;
   background-color: #fff;
   position: relative;
+  /* Added to ensure all content is contained within the cube */
+  overflow: hidden;
+  margin: 10px; /* Optional: Adds consistent margin around cubes */
 }
 
 /* Cube Content Styling */
@@ -68,6 +68,8 @@ main,section {
   align-items: center;
   padding: 20px;
   box-sizing: border-box;
+  /* Added to ensure all content is contained within the cube content */
+  overflow: hidden;
 }
 
 .project-cube a {
@@ -114,12 +116,16 @@ main,section {
 }
 
 /* Tool Bar */
-ul, .nav-bar {
+.nav-bar {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .nav-bar {
@@ -145,30 +151,17 @@ li a:hover {
   border-radius: 4px;
 }
 
-/* About Section Styling */
-.about-section {
+/* About Section Image Styling */
+
+
+.about-image {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px;
-  max-width: 1200px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.about-content {
-  flex: 1;
-  padding: 0 50px;
-  text-align: center;
-}
-
-.about-image {
-  flex: 0 0 300px;
 }
 
 .about-image img {
-  width: 100%;
-
+  width: 50%;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -181,20 +174,20 @@ h1, h2 {
 }
 
 h4 {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
   color: white;
   background-color: #333;
   padding: 10px 20px;
   border-radius: 8px;
-  outline: 2px solid #555;url(http://127.0.0.1:3000/index.html)
+  outline: 2px solid #555;
   text-align: center;
   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 p {
   color: #444;
-  font-size: 1.1em;
+  font-size: 1em;
   max-width: 800px;
   margin: 20px auto;
   text-align: center;
@@ -211,85 +204,42 @@ img {
 
 /* Sections Styling footer osv */
 section {
-  padding: 40px;
-  margin: 30px auto;
-  max-width: 1200px;
+  padding: 10px; 
+  margin: 5px auto;
+  box-sizing: flex; 
+  max-width: 1000px; 
   background: white;
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-  transform: perspective(1000px) rotateX(2deg);
-  transition: transform 0.3s ease;
-  border: 1px solid rgba(0,0,0,0.1);
-  backdrop-filter: blur(10px);
+  border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); 
   
-}
-
-footer {
-  background-image: url(../Bilder/Header.png);
-  background-size: 120%;
-  background-position: center 100%;
-  color: rgba(255, 255, 255, 0.027);
-  padding: 80px;
-}
-
-
-section:hover, footer:hover {
-  transform: perspective(1000px) rotateX(0deg);
-  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
 }
 
 
 /* Sections Double on one page aka Horizontal Grids  */
 .Horizontal {
-
-  flex-direction: row;
+  padding: 5px;
+  margin: 10px auto;
+  max-width: 600px;
+  gap: 10px; /* Reduced gap for compact layout */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px 10px;
-  gap: 10px;
-
 }
 
 .Horizontal section {
   flex: 1 1 calc(50% - 20px);
+ 
+  padding: 10px; /* Reduced padding for a more compact look */
+  margin: 0;
+  max-width: none; /* Allow flexbox to dictate width */
+  transform: none; /* Remove the perspective transform */
 }
 
-@media (max-width: 767px) {
-  .Horizontal section {
-    flex: 1 1 100%;
-  }
-}
-
-
-/* Home Section */
-#home {
-  background-color: #ffffff;
-}
-
-/* Table Styling */
-table {
-  border-collapse: collapse;
+.Horizontal section img {
+  /* Adjusted to make images fit the section size */
   width: 100%;
-}
-
-td, th {
-  border: 1px solid black;
-  padding: 8px;
-  text-align: center;
-  color: #000000;
-}
-
-th {
-  background-color: hsl(78, 48%, 58%);
-}
-
-caption {
-  color: #000;
-  font-size: 110%;
-  padding: 10px;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Container for Flex Layout */
@@ -297,19 +247,25 @@ caption {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  gap: 10px; /* Reduced gap for compact spacing */
   max-width: 1000px;
   margin: 0 auto;
-  padding: 20px 10px;
-  gap: 20px;
+  padding: 5px; /* Reduced padding */
 }
 
 .container section {
-  flex: 1 1 calc(33.333% - 20px);
   background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 15px;
-  min-width: 250px;
+  border-radius: 8px; /* Reduced border-radius for a more compact look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Reduced box-shadow for a more compact look */
+  padding: 10px; /* Reduced padding for a more compact look */
+  min-width: 200px; /* Reduced min-width for a more compact look */
 }
 
-
+/* Main Section */
+main {
+  
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px; /* Reduced grid gap for compact layout */
+  padding: 10px; /* Keep it minimal */
+}
