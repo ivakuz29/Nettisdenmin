@@ -31,40 +31,21 @@ header {
   padding: 60px;
 }
 
-/* nav bar */
-.nav-bar {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #ffffff;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-}
-
-.nav-bar {
-  background-color: #79949f;
-}
-
-li {
-  display: inline-block;
-  padding: 14px 20px;
-}
-
-li a {
-  text-decoration: none;
+footer {
+  background-image: url(../Bilder/Header.png);
+  background-size: 120%;
+  background-position: center 100%;
+  background-attachment: fixed;
   color: white;
-  font-weight: bold;
-  padding: 14px 20px;
-  transition: 0.3s;
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  padding: 60px; 
 }
 
-li a:hover {
-  background-color: #192840;
-  color: #ffffff;
-  border-radius: 4px;
+main, section {
+  /* Added to ensure all content is contained within the section */
+  overflow: hidden;
 }
 
 /* Project Cubes Container */
@@ -146,7 +127,41 @@ li a:hover {
   color: #000000;
 }
 
+/* Tool Bar */
+.nav-bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
 
+.nav-bar {
+  background-color: #79949f;
+}
+
+li {
+  display: inline-block;
+  padding: 14px 20px;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 14px 20px;
+  transition: 0.3s;
+}
+
+li a:hover {
+  background-color: #192840;
+  color: #ffffff;
+  border-radius: 4px;
+}
 
 /* About Section Image Styling */
 
@@ -170,7 +185,6 @@ h1, h2 {
   text-align: center;
 }
 
-
 h4 {
   font-size: 20px;
   font-weight: bold;
@@ -185,9 +199,10 @@ h4 {
 
 p {
   color: #444;
+  font-size: 1em;
   max-width: 800px;
+  margin: 20px auto;
   text-align: center;
-  padding: 10px
 }
 
 /* Images */
@@ -196,36 +211,23 @@ img {
   height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: auto;
+  margin: 10px auto;
 }
 
-footer {
-  background-image: url(../Bilder/Header.png);
-  background-size: 120%;
-  background-position: center 100%;
-  background-attachment: fixed;
-  color: white;
-  font-style: italic;
-  font-family: 'Times New Roman', Times, serif;
-  text-align: center;
-  padding: 60px;
-}
-
-/* Sections Styling Horzontals osv*/
+/* Sections Styling footer osv */
 section {
   padding: 10px; 
   margin: 5px auto;
-  box-sizing: flex; /* Corrected box-sizing property */
+  box-sizing: flex; 
   max-width: 1000px; 
   background: rgb(255, 255, 255);
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1); 
-  gap: 10px
+  
 }
 
-/* Sektion to make background invisible */
 section.alternate {
-  background: rgb(62, 69, 78); /* Changed background color */
+  background: rgb(62, 69, 78);
 }
 
 
@@ -319,6 +321,13 @@ main {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px; 
   padding: 10px; 
+}
+
+/* Media for minde kjermer */
+@media (max-width: 840px) and (max-height: 738px) {
+  main {
+    grid-template-columns: 1fr;
+  }
 }
 
 
