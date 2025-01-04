@@ -28,7 +28,7 @@ header {
   font-style: italic;
   font-family: 'Times New Roman', Times, serif;
   text-align: center;
-  padding: 60px; /* Reduced padding for a more compact look */
+  padding: 60px;
 }
 
 main, section {
@@ -202,7 +202,19 @@ img {
   margin: 10px auto;
 }
 
-/* Sections Styling footer osv */
+footer {
+  background-image: url(../Bilder/Header.png);
+  background-size: 120%;
+  background-position: center 100%;
+  background-attachment: fixed;
+  color: white;
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  padding: 60px;
+}
+
+/* Sections Styling Horzontals osv*/
 section {
   padding: 10px; 
   margin: 5px auto;
