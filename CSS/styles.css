@@ -214,7 +214,7 @@ p {
   font-size: 1em;
   max-width: 800px;
   text-align: center;
-  margin: 20px 0; 
+  margin: 20px auto; 
 }
 
 /* Images */
