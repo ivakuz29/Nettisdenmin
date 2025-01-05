@@ -38,8 +38,19 @@ footer {
 }
 
 main, section {
-  /* Added to ensure all content is contained within the section */
   overflow: hidden;
+}
+
+.Aliigment {
+  max-width: 1220px;
+  margin-top: 50px; /* Mergin top til at sekjonene er lengre nede */
+}
+
+@media (max-width: 1220px) {
+  .Aliigment {
+    max-width: 800px;
+    margin-top: 50px; 
+  }
 }
 
 /* Project Cubes Container */
@@ -244,19 +255,18 @@ section.alternate {
 }
 
 .Horizontal section {
-  flex: 1 1 calc(50% - 20px);
- 
-  padding: 10px; /* Reduced padding for a more compact look */
+  padding: 10px; 
   margin: 0;
-  max-width: none; /* Allow flexbox to dictate width */
-  transform: none; /* Remove the perspective transform */
+  max-width: none; 
+  transform: none; 
 }
 
 .Horizontal section img {
   /* Adjusted to make images fit the section size */
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: row;
+  
 }
 
 
@@ -265,18 +275,18 @@ section.alternate {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 10px; /* Reduced gap for compact spacing */
+  gap: 10px; 
   max-width: 1000px;
   margin: 0 auto;
-  padding: 5px; /* Reduced padding */
+  padding: 5px; 
 }
 
 .container section {
   background-color: white;
-  border-radius: 8px; /* Reduced border-radius for a more compact look */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Reduced box-shadow for a more compact look */
-  padding: 10px; /* Reduced padding for a more compact look */
-  min-width: 200px; /* Reduced min-width for a more compact look */
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  padding: 10px; 
+  min-width: 200px; 
 }
 /* Styling for the table caption */
 caption {
@@ -287,7 +297,7 @@ caption {
   color: #333;
 }
 
-/* Styling for the top-row */
+/* Styling for top-row, I logg */
 .top-row {
   background-color: #ffffff;
 
@@ -295,7 +305,7 @@ caption {
   text-align: left;
 }
 
-/* General table data cell styling */
+/* td styling for logg */
 td {
   border: 1px solid #000000;
   padding: 10px;
@@ -303,7 +313,7 @@ td {
   color: black;
 }
 
-/* Styling for rows other than the top-row */
+/* Styling for rows, aka logg*/
 .row {
   background-color: #f9f9f9;
 }
@@ -319,8 +329,8 @@ main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: fit-content;
-  gap: 20px; /* Decreased gap to bring sections closer */
-  padding: 90px; /* Maintained padding to keep sections further from corners */
+  gap: 20px; 
+  padding: 20px; /* Mindre padding til og gjøre alt nærmare hverandre*/
   justify-content: center;
   margin: 0 auto; 
 }
@@ -329,9 +339,68 @@ main {
 @media (max-width: 1279px) {
   main {
     grid-template-columns: 1fr;
-    gap: 10px; /* Reset gap for smaller screens to prevent overlap */
-    padding: 90px; /* Maintained padding for smaller screens */
+    gap: 10px; /* gap for smaller mindre kjerm slik sekjonene blir ikke overlappa */
+    padding: 20px; /* Further reduced padding for smaller screens to bring content even more up */
   }
 }
 
 
+/*fotohistorie bilder CSS*/
+/* Image gallery styling - reduce width and padding */
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px; /* Reduced gap */
+  padding: 15px; /* Reduced padding */
+  max-width: 700px; /* Reduced max-width */
+  margin: 0 auto;
+}
+
+/* Image box styling */
+.image-box {
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.image-box:hover {
+  transform: scale(1.05);
+}
+
+.image-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.image-box p {
+  font-size: 18px;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Section styling */
+.image-section {
+  text-align: center;
+  padding: 20px;
+}
+
+/* New container for the images in a row - reduce width */
+.image-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px; /* Reduced gap */
+  padding-top: 20px;
+  max-width: 900px; /* Ensure row isn't too wide */
+  margin: 0 auto;
+}
+
+/* Image styling */
+.image-row img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  width: 30%; /* Ensures images take up equal space */
+}
