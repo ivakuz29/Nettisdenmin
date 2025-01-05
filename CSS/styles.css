@@ -7,9 +7,10 @@ body {
   color: #adadad;
   text-align: center;
  
-  background-color: #3e464f;
+  background-color: #FFFBE6;
   background-size: cover;
 }
+
 
 
 /* Header styling */
@@ -146,7 +147,7 @@ main, section {
 }
 
 .nav-bar {
-  background-color: #79949f;
+  background-color: #1A1A1D;
 }
 
 li {
@@ -239,7 +240,7 @@ section {
 }
 
 section.alternate {
-  background: rgb(62, 69, 78);
+  background: #FFFBE6;
 }
 
 
