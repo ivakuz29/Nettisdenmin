@@ -234,6 +234,7 @@ section {
   margin: 5px auto;
   box-sizing: flex; 
   max-width: 1000px; 
+  margin-top: 40px; 
   background: rgb(255, 255, 255);
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1); 
