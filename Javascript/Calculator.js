@@ -1,4 +1,5 @@
 let currentInput = '';
+let lastAnswer = '';
 
 // Når et tall trykkes, legger vi det til i input-feltet
 function appendNumber(num) {
@@ -28,7 +29,10 @@ function clearResult() {
 function calculate() {
     try {
         // Utfører beregningen ved hjelp av eval() og viser resultatet i input-feltet
-        document.getElementById('result').value = eval(currentInput);
+        let result = eval(currentInput);
+        document.getElementById('result').value = result;
+        // Husker det siste svaret
+        lastAnswer = result;
         // Etter beregning, tømmer vi input-feltet
         currentInput = '';
     } catch (error) {
@@ -39,5 +43,11 @@ function calculate() {
     }
 }
 
-
- 
+// Når "exc" trykkes, viser vi det siste svaret
+function exc() {
+    // Hvis det er et siste svar, viser vi det i input-feltet
+    if (lastAnswer) {
+        currentInput = lastAnswer;
+        document.getElementById('result').value = lastAnswer;
+    }
+}
