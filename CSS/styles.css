@@ -7,7 +7,7 @@ body {
   color: #adadad;
   text-align: center;
  
-  background-color: #9b9372;
+  background-color: #cbc3a8;
   background-size: cover;
 }
 
@@ -242,7 +242,7 @@ section {
 }
 
 section.alternate {
-  background: #9b9372;
+  background: #cbc3a8;
 }
 
 
