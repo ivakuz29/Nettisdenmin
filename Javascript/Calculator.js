@@ -1,32 +1,43 @@
 let currentInput = '';
 
-// Function to append numbers to the result input
+// Når et tall trykkes, legger vi det til i input-feltet
 function appendNumber(num) {
+    // Legger til det trykkede tallet til det eksisterende input
     currentInput += num;
+    // Oppdaterer input-feltet med det nye tallet
     document.getElementById('result').value = currentInput;
 }
 
-// Function to append operators (+, -, *, /)
+// Når en operator (+, -, *, /) trykkes, legger vi den til i input-feltet
 function appendOperator(operator) {
+    // Legger til operatoren (pluss, minus, etc.) til input-feltet
     currentInput += ' ' + operator + ' ';
+    // Oppdaterer input-feltet med den nye operatoren
     document.getElementById('result').value = currentInput;
 }
 
-// Function to clear the input field
+// Når "C" trykkes, tømmer vi input-feltet
 function clearResult() {
+    // Tømmer alle tegn i input-feltet
     currentInput = '';
+    // Oppdaterer input-feltet til å være tomt
     document.getElementById('result').value = '';
 }
 
-// Function to calculate the result
+// Når "=" trykkes, regner vi ut resultatet
 function calculate() {
     try {
+        // Utfører beregningen ved hjelp av eval() og viser resultatet i input-feltet
         document.getElementById('result').value = eval(currentInput);
+        // Etter beregning, tømmer vi input-feltet
         currentInput = '';
     } catch (error) {
-        document.getElementById('result').value = 'Error';
+        // Hvis noe går galt, viser vi en feilmelding
+        document.getElementById('result').value = 'Feil';
+        // Tømmer input-feltet etter feil
         currentInput = '';
     }
 }
+
 
  

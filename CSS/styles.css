@@ -444,9 +444,37 @@ button {
 }
 
 button:hover {
-  background-color: #e0e0e0;
+  background-color: #ffffff;
 }
 
 button:active {
   background-color: #d0d0d0;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dagmodus-knapp */
+button.day {
+  background-color: #cbc3a8;
+  color: #333;
+}
+
+/* Nattmodus-knapp */
+button.night {
+  background-color: #333;
+  color: #fff;
+}
+
+#ageDisplay {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
 }
