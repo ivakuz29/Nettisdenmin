@@ -243,6 +243,7 @@ section {
 
 section.alternate {
   background: #cbc3a8;
+  box-shadow: none;
 }
 
 
